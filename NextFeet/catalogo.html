@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - NextFeet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Next<span>Feet</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html" class="active">Catálogo</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="perfil.html">👤</a>
+            <a href="carrito.html">🛒<span class="cart-badge">3</span></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Catálogo de Zapatillas</h1>
+
+        <!-- BUSCADOR -->
+        <div class="search-bar">
+            <input type="text" placeholder="🔍 Buscar por nombre, marca o palabra clave...">
+            <button class="btn btn-primary">Buscar</button>
+        </div>
+
+        <!-- FILTROS -->
+        <div class="filters-bar">
+            <div class="form-group">
+                <label>Marca</label>
+                <select>
+                    <option>Todas</option>
+                    <option>Nike</option>
+                    <option>Adidas</option>
+                    <option>Puma</option>
+                    <option>New Balance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Categoría</label>
+                <select>
+                    <option>Todas</option>
+                    <option>Deportivas</option>
+                    <option>Running</option>
+                    <option>Urbanas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Talla</label>
+                <select>
+                    <option>Cualquiera</option>
+                    <option>38</option>
+                    <option>39</option>
+                    <option>40</option>
+                    <option>41</option>
+                    <option>42</option>
+                    <option>43</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Precio máximo: S/ 500</label>
+                <input type="range" min="50" max="800" value="500">
+            </div>
+            <button class="btn btn-secondary">Aplicar filtros</button>
+        </div>
+
+        <!-- GRID PRODUCTOS -->
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">👟</div>
+                <div class="product-info">
+                    <span class="product-brand">Nike</span>
+                    <h3 class="product-name">Air Max 270</h3>
+                    <div class="product-price">S/ 349.00</div>
+                    <div class="product-actions">
+                        <a href="producto.html" class="btn btn-primary btn-sm btn-block">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">👟</div>
+                <div class="product-info">
+                    <span class="product-brand">Adidas</span>
+                    <h3 class="product-name">Ultraboost 22</h3>
+                    <div class="product-price">S/ 429.00</div>
+                    <div class="product-actions">
+                        <a href="producto.html" class="btn btn-primary btn-sm btn-block">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    👟
+                    <span class="discount-tag">-30%</span>
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Puma</span>
+                    <h3 class="product-name">RS-X Reinvention</h3>
+                    <div class="product-price">
+                        S/ 259.00
+                        <span class="product-price-old">S/ 370.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="producto.html" class="btn btn-primary btn-sm btn-block">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">👟</div>
+                <div class="product-info">
+                    <span class="product-brand">New Balance</span>
+                    <h3 class="product-name">574 Classic</h3>
+                    <div class="product-price">S/ 379.00</div>
+                    <div class="product-actions">
+                        <a href="producto.html" class="btn btn-primary btn-sm btn-block">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">👟</div>
+                <div class="product-info">
+                    <span class="product-brand">Nike</span>
+                    <h3 class="product-name">Revolution 6</h3>
+                    <div class="product-price">S/ 219.00</div>
+                    <div class="product-actions">
+                        <a href="producto.html" class="btn btn-primary btn-sm btn-block">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    👟
+                    <span class="discount-tag">-20%</span>
+                </div>
+                <div class="product-info">
+                    <span class="product-brand">Adidas</span>
+                    <h3 class="product-name">Runfalcon 3.0</h3>
+                    <div class="product-price">
+                        S/ 199.00
+                        <span class="product-price-old">S/ 249.00</span>
+                    </div>
+                    <div class="product-actions">
+                        <a href="producto.html" class="btn btn-primary btn-sm btn-block">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">👟</div>
+                <div class="product-info">
+                    <span class="product-brand">Puma</span>
+                    <h3 class="product-name">Flyer Runner</h3>
+                    <div class="product-price">S/ 189.00</div>
+                    <div class="product-actions">
+                        <a href="producto.html" class="btn btn-primary btn-sm btn-block">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">👟</div>
+                <div class="product-info">
+                    <span class="product-brand">New Balance</span>
+                    <h3 class="product-name">Fresh Foam 1080</h3>
+                    <div class="product-price">S/ 499.00</div>
+                    <div class="product-actions">
+                        <a href="producto.html" class="btn btn-primary btn-sm btn-block">Ver producto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>NextFeet</h4>
+                <p style="color:#ccc; font-size:0.9rem;">Digitalizando el comercio de zapatillas.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 NextFeet</div>
+    </footer>
+</body>
+</html>

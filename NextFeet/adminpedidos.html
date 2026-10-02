@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Pedidos - NextFeet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="admindashboard.html" class="logo">Next<span>Feet</span> Admin</a>
+        <ul class="nav-links">
+            <li><a href="admindashboard.html">Dashboard</a></li>
+            <li><a href="adminzapatillas.html">Zapatillas</a></li>
+            <li><a href="adminpedidos.html" class="active">Pedidos</a></li>
+            <li><a href="adminofertas.html">Ofertas</a></li>
+            <li><a href="adminclientes.html">Clientes</a></li>
+            <li><a href="admincategorias.html">Categorías</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="login.html">👤</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Gestión de Pedidos</h1>
+
+        <div class="search-bar">
+            <input type="text" placeholder="🔍 Buscar por código de pedido o cliente...">
+            <button class="btn btn-primary">Buscar</button>
+        </div>
+
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Cliente</th>
+                    <th>Fecha</th>
+                    <th>Total</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>NF-2026-001234</strong></td>
+                    <td>Juan Pérez</td>
+                    <td>15/04/2026</td>
+                    <td>S/ 1037.00</td>
+                    <td><span class="badge badge-warning">En preparación</span></td>
+                    <td><button class="btn btn-secondary btn-sm">Ver detalle</button></td>
+                </tr>
+                <tr>
+                    <td><strong>NF-2026-001233</strong></td>
+                    <td>María López</td>
+                    <td>15/04/2026</td>
+                    <td>S/ 429.00</td>
+                    <td><span class="badge badge-info">En camino</span></td>
+                    <td><button class="btn btn-secondary btn-sm">Ver detalle</button></td>
+                </tr>
+                <tr>
+                    <td><strong>NF-2026-001232</strong></td>
+                    <td>Carlos Ruiz</td>
+                    <td>14/04/2026</td>
+                    <td>S/ 698.00</td>
+                    <td><span class="badge badge-success">Entregado</span></td>
+                    <td><button class="btn btn-secondary btn-sm">Ver detalle</button></td>
+                </tr>
+                <tr>
+                    <td><strong>NF-2026-001231</strong></td>
+                    <td>Ana Torres</td>
+                    <td>13/04/2026</td>
+                    <td>S/ 259.00</td>
+                    <td><span class="badge badge-danger">Anulado</span></td>
+                    <td><button class="btn btn-secondary btn-sm">Ver detalle</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="footer-bottom" style="max-width:1200px;margin:0 auto;text-align:center;">
+            © 2026 NextFeet Admin
+        </div>
+    </footer>
+</body>
+</html>

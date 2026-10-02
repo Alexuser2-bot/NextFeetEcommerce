@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Zapatillas - NextFeet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="admin-dashboard.html" class="logo">Next<span>Feet</span> Admin</a>
+        <ul class="nav-links">
+            <li><a href="admindashboard.html">Dashboard</a></li>
+            <li><a href="adminzapatillas.html" class="active">Zapatillas</a></li>
+            <li><a href="adminpedidos.html">Pedidos</a></li>
+            <li><a href="adminofertas.html">Ofertas</a></li>
+            <li><a href="adminclientes.html">Clientes</a></li>
+            <li><a href="admincategorias.html">Categorías</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="login.html">👤</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; flex-wrap:wrap; gap:1rem;">
+            <h1 class="page-title" style="margin-bottom:0;">Gestión de Zapatillas</h1>
+            <a href="#" class="btn btn-primary">+ Agregar Zapatilla</a>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="🔍 Buscar por código SKU, nombre o marca...">
+            <button class="btn btn-primary">Buscar</button>
+        </div>
+
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#001</td>
+                    <td><div class="cart-product-img" style="width:40px;height:40px;font-size:1rem;">👟</div></td>
+                    <td>Air Max 270</td>
+                    <td>Nike</td>
+                    <td>S/ 349.00</td>
+                    <td>15</td>
+                    <td><span class="badge badge-success">Activo</span></td>
+                    <td>
+                        <button class="btn btn-secondary btn-sm">✏️</button>
+                        <button class="btn btn-warning btn-sm">👁️</button>
+                        <button class="btn btn-danger btn-sm">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#002</td>
+                    <td><div class="cart-product-img" style="width:40px;height:40px;font-size:1rem;">👟</div></td>
+                    <td>Ultraboost 22</td>
+                    <td>Adidas</td>
+                    <td>S/ 429.00</td>
+                    <td>8</td>
+                    <td><span class="badge badge-success">Activo</span></td>
+                    <td>
+                        <button class="btn btn-secondary btn-sm">✏️</button>
+                        <button class="btn btn-warning btn-sm">👁️</button>
+                        <button class="btn btn-danger btn-sm">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#003</td>
+                    <td><div class="cart-product-img" style="width:40px;height:40px;font-size:1rem;">👟</div></td>
+                    <td>RS-X Reinvention</td>
+                    <td>Puma</td>
+                    <td>S/ 259.00</td>
+                    <td>0</td>
+                    <td><span class="badge badge-danger">Sin stock</span></td>
+                    <td>
+                        <button class="btn btn-secondary btn-sm">✏️</button>
+                        <button class="btn btn-warning btn-sm">👁️</button>
+                        <button class="btn btn-danger btn-sm">🗑️</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#004</td>
+                    <td><div class="cart-product-img" style="width:40px;height:40px;font-size:1rem;">👟</div></td>
+                    <td>574 Classic</td>
+                    <td>New Balance</td>
+                    <td>S/ 379.00</td>
+                    <td>22</td>
+                    <td><span class="badge badge-success">Activo</span></td>
+                    <td>
+                        <button class="btn btn-secondary btn-sm">✏️</button>
+                        <button class="btn btn-warning btn-sm">👁️</button>
+                        <button class="btn btn-danger btn-sm">🗑️</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="footer-bottom" style="max-width:1200px;margin:0 auto;text-align:center;">
+            © 2026 NextFeet Admin
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - NextFeet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Next<span>Feet</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Iniciar Sesión</h2>
+            <p class="form-subtitle">Bienvenido de nuevo a NextFeet</p>
+
+            <form action="catalogo.html" method="GET">
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" 
+                           placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" 
+                           placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
+            </form>
+
+            <div class="form-footer">
+                ¿No tienes cuenta? <a href="registro.html">Regístrate aquí</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>NextFeet</h4>
+                <p style="color:#ccc; font-size:0.9rem;">Digitalizando el comercio de zapatillas.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces</h4>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="catalogo.html">Catálogo</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 NextFeet - Universidad Continental</div>
+    </footer>
+</body>
+</html>

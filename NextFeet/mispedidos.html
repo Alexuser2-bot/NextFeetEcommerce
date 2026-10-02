@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Pedidos - NextFeet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Next<span>Feet</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="mispedidos.html" class="active">Mis Pedidos</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="perfil.html">👤</a>
+            <a href="carrito.html">🛒<span class="cart-badge">3</span></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Historial de Compras</h1>
+
+        <table class="admin-table">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Código</th>
+                    <th>Productos</th>
+                    <th>Total</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15/04/2026</td>
+                    <td><strong>NF-2026-001234</strong></td>
+                    <td>3 productos</td>
+                    <td>S/ 1037.00</td>
+                    <td><span class="badge badge-warning">En preparación</span></td>
+                    <td><a href="seguimiento.html" class="btn btn-secondary btn-sm">Ver detalle</a></td>
+                </tr>
+                <tr>
+                    <td>02/04/2026</td>
+                    <td><strong>NF-2026-001120</strong></td>
+                    <td>1 producto</td>
+                    <td>S/ 429.00</td>
+                    <td><span class="badge badge-success">Entregado</span></td>
+                    <td><a href="seguimiento.html" class="btn btn-secondary btn-sm">Ver detalle</a></td>
+                </tr>
+                <tr>
+                    <td>20/03/2026</td>
+                    <td><strong>NF-2026-000988</strong></td>
+                    <td>2 productos</td>
+                    <td>S/ 698.00</td>
+                    <td><span class="badge badge-success">Entregado</span></td>
+                    <td><a href="seguimiento.html" class="btn btn-secondary btn-sm">Ver detalle</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="footer-bottom" style="max-width:1200px;margin:0 auto;text-align:center;">
+            © 2026 NextFeet
+        </div>
+    </footer>
+</body>
+</html>
