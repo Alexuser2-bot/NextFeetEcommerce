@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - NextFeet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Next<span>Feet</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="mispedidos.html">Mis Pedidos</a></li>
+        </ul>
+        <div class="nav-icons">
+            <a href="perfil.html">👤</a>
+            <a href="carrito.html">🛒<span class="cart-badge">3</span></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Mi Perfil</h1>
+
+        <div class="form-container" style="max-width:600px;">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombres">Nombres</label>
+                        <input type="text" id="nombres" value="Juan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" value="Pérez" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" value="juan.perez@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" value="987 654 321" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Nueva contraseña (opcional)</label>
+                    <input type="password" id="password" placeholder="••••••••">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Guardar cambios</button>
+            </form>
+
+            <hr style="margin:2rem 0; border:none; border-top:1px solid var(--border);">
+
+            <div class="alert alert-danger">
+                <strong>⚠️ Zona de peligro</strong><br>
+                <small>Una vez desactivada tu cuenta, no podrás volver a iniciar sesión.</small>
+                <button class="btn btn-danger btn-sm" style="margin-top:0.8rem;">Desactivar mi cuenta</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-bottom" style="max-width:1200px;margin:0 auto;text-align:center;">
+            © 2026 NextFeet
+        </div>
+    </footer>
+</body>
+</html>
